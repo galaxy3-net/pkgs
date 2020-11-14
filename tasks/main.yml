@@ -12,7 +12,7 @@
 - name: Copy G3 Functions to /usr/local/bin
   copy:
     src:  /home/vagrant/functions
-    dest: /usr/local/bin
+    dest: /usr/local/bin/
   become: yes
 #
 - name: Create theDr
