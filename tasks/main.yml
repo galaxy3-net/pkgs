@@ -13,6 +13,9 @@
   copy:
     src:  /home/vagrant/functions/bin
     dest: /usr/local/
+    owner: root
+    group: root
+    mode: 0655
   become: yes
 #
 
