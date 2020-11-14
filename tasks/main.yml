@@ -1,6 +1,17 @@
 ---
 # tasks file for ansible
 
+- name: Show Hostname
+  debug:
+    msg: "Hostname is {{ ansible_hostname }}"
+
+- name: Update apt
+  become: yes
+  apt:
+    cache_valid_time: 1800
+    update_cache: yes
+  when: ansible_os_family == 'Debian'
+
 # roles/example/tasks/debian.yml
 - name: Install Packages
   ansible.builtin.apt:
@@ -8,6 +19,7 @@
     state: present
   loop: "{{ pkgs }}"
   become: yes
+  when: ansible_os_family == 'Debian'
 
 - name: Copy G3 Functions to /usr/local/bin
   copy:
