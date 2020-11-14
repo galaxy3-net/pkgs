@@ -5,3 +5,7 @@
 - name: named
   src: https://github.com/galaxy3-net/ansible_named
   version: named
+
+- name: xrdp
+  src: https://github.com/galaxy3-net/ansible_xrdp
+  version: xrdp

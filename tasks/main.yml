@@ -114,3 +114,8 @@
     - { state: "present",  line: "nameserver 8.8.8.8" }
     - { state: "present",  line: 'search moddell.galaxy3.net attlocal.net, empire.local' }
   become: yes
+
+- name: Flush IPTAbles
+  iptables:
+    flush: yes
+  become: yes
