@@ -4,4 +4,4 @@
 
 - name: named
   src: https://github.com/galaxy3-net/ansible_named
-  version: "origin/named"
+  version: origin/named
