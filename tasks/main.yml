@@ -22,9 +22,16 @@
     force_apt_get: yes
     install_recommends: yes
     update_cache: yes
-  loop: "{{ pkgs }}"
+  loop: "{{ apt_pkgs }}"
   become: yes
   when: ansible_os_family == 'Debian'
+
+- name: Install Snap Based Packages
+  become: yes
+  snap:
+    name: "{{ item }}"
+    state: present
+  loop: "{{ snap_pkgs }}"
 
 - name: Copy G3 Functions to /usr/local/bin
   copy:
