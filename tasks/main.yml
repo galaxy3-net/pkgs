@@ -30,8 +30,8 @@
   become: yes
   snap:
     name: "{{ item.name }}"
-    channel: "{{ item.channel | default(stable) }}"
-    state: present
+    channel: "{{ item.channel | default('stable') }}"
+    state: "{{ item.state | default('present') }}"
   loop: "{{ snap_pkgs }}"
   when: ansible_os_family == 'Debian'
 
