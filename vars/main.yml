@@ -14,5 +14,5 @@ apt_pkgs:
   - htop
 
 snap_pkgs:
-  - terraform
-  - azure-cli
+  - { name: terraform }
+  - { name: azure-cli, channel: beta }

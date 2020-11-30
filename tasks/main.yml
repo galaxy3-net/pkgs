@@ -29,7 +29,8 @@
 - name: Install Snap Based Packages
   become: yes
   snap:
-    name: "{{ item }}"
+    name: "{{ item.name }}"
+    channel: "{{ item.channel | default(stable) }}"
     state: present
   loop: "{{ snap_pkgs }}"
   when: ansible_os_family == 'Debian'
