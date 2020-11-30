@@ -17,6 +17,11 @@
   ansible.builtin.apt:
     name: "{{item}}"
     state: present
+    autoclean: yes
+    autoremove: yes
+    force_apt_get: yes
+    install_recommends: yes
+    update_cache: yes
   loop: "{{ pkgs }}"
   become: yes
   when: ansible_os_family == 'Debian'
