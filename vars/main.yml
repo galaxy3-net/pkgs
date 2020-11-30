@@ -15,3 +15,4 @@ apt_pkgs:
 
 snap_pkgs:
   - terraform
+  - azure-cli
