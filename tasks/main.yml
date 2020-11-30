@@ -31,6 +31,7 @@
   snap:
     name: "{{ item.name }}"
     channel: "{{ item.channel | default('stable') }}"
+    classic: "{{ item.classic | default('no') }}"
     state: "{{ item.state | default('present') }}"
   loop: "{{ snap_pkgs }}"
   when: ansible_os_family == 'Debian'
