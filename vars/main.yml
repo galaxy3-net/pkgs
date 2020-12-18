@@ -17,25 +17,21 @@ snap_pkgs:
   - { name: terraform }
   - { name: azure-cli, channel: beta, classic: yes }
 
-groups:
+my_groups:
   - {
       name: "sysadmin",
-      state: present,
       gid: 1000
     }
   - {
       name: "instructor",
-      state: present,
       gid: 1002
     }
   - {
       name: "student",
-      state: present,
       gid: 1004
     }
   - {
       name: "thedr",
-      state: present,
       gid: 2001
     }
 

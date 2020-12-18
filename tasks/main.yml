@@ -51,7 +51,7 @@
     name: "{{ item.name }}"
     gid: "{{ item.gid }}"
     state: "{{ item.state | default('present') }}"
-  loop: "{{ groups }}"
+  loop: "{{ my_groups }}"
   become: yes
 
 - name: Create Users
