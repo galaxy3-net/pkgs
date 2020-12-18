@@ -46,7 +46,15 @@
   become: yes
 #
 
-- name: Create theDr
+- name: Create Groups
+  group:
+    name: "{{ item.name }}"
+    gid: "{{ item.gid }}"
+    state: "{{ item.state | default('present') }}"
+  loop: "{{ groups }}"
+  become: yes
+
+- name: Create Users
   user:
     name: "{{ item.name }}"
     uid: "{{ item.uid }}"
