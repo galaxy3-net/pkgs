@@ -27,7 +27,7 @@ users:
       home: "/home/thedr"
     }
   - { name: 'instructor',
-      uid: 2002,
+      uid: 2003,
       shell: "/bin/bash",
       owner: "instructor",
       group: "instructor",
