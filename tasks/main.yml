@@ -53,7 +53,7 @@
     state: "{{ item.state | default('present') }}"
   loop: "{{ my_groups }}"
   become: yes
-  when: hostname != 'ucibox'
+  when: "{{ item.hosts }}" exists and "{{ hostname }}" in "{{ item.hosts }}"
 
 - name: Create Users
   user:
