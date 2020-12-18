@@ -20,7 +20,7 @@ snap_pkgs:
 my_groups:
   - {
       name: "sysadmin",
-      gid: 1000
+      gid: 1001
     }
   - {
       name: "instructor",
@@ -59,7 +59,7 @@ users:
     }
   - {
       name: 'sysadmin',
-      uid: 1000,
+      uid: 1001,
       shell: "/bin/bash",
       owner: "sysadmin",
       group: "sysadmin",
