@@ -32,7 +32,7 @@ my_groups:
     }
   - {
       name: "thedr",
-      gid: 2001
+      gid: 2001,
       hosts: ucibox,kalibox
     }
 
@@ -45,7 +45,7 @@ users:
       group: "thedr",
       comment: "Master of the Universe",
       home: "/home/thedr",
-      password: 'thedr'
+      password: 'thedr',
       hosts: ucibox,kalibox
     }
   - {
