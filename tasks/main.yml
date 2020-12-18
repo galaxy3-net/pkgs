@@ -3,7 +3,7 @@
 
 - name: Show Hostname
   debug:
-    msg: "Hostname is {{ ansible_hostname }}"
+    msg: "Hostname is {{ ansible_hostname }} {{ ansible_os_family }}"
 
 - name: Update apt
   become: yes
