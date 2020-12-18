@@ -26,3 +26,11 @@ users:
       comment: "Master of the Universe",
       home: "/home/thedr"
     }
+  - { name: 'instructor',
+      uid: 2002,
+      shell: "/bin/bash",
+      owner: "instructor",
+      group: "instructor",
+      comment: "Course Instructor",
+      home: "/home/instructor"
+  }
