@@ -53,7 +53,7 @@
     state: "{{ item.state | default('present') }}"
   loop: "{{ my_groups }}"
   become: yes
-  when: "{{ item.hosts | default('notdefined') }}" != "notdefined" and "{{ hostname }}" in "{{ item.hosts }}"
+  when: {{ item.hosts | default('notdefined') }} != "notdefined" and "{{ hostname }}" in "{{ item.hosts }}"
 
 - name: Create Users
   user:
