@@ -16,3 +16,13 @@ apt_pkgs:
 snap_pkgs:
   - { name: terraform }
   - { name: azure-cli, channel: beta, classic: yes }
+
+users:
+  - { name: 'thedr',
+      uid: 2001,
+      shell: "/bin/bash",
+      owner: "thedr",
+      group: "thedr",
+      comment: "Master of the Universe",
+      home: "/home/thedr"
+    }
