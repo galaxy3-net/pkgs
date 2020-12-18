@@ -48,7 +48,7 @@
 
 - name: Create theDr
   user:
-    name: "{{ item.name ]]"
+    name: "{{ item.name }}"
     uid: "{{ item.uid }}"
     shell: "{{ item.shell }}"
     comment: "{{ item.comment }}"
