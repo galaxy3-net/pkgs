@@ -53,6 +53,7 @@
     state: "{{ item.state | default('present') }}"
   loop: "{{ my_groups }}"
   become: yes
+  when: ansible_os_hostname != 'ucibox'
 
 - name: Create Users
   user:
@@ -65,6 +66,7 @@
     password: "{{ item.password | password_hash('sha512', 'mysalt') }}"
   loop: "{{ users }}"
   become: yes
+  when: ansible_os_hostname != 'ucibox'
 
 # Create the Services Directory
 - name: Create the Services Directory
