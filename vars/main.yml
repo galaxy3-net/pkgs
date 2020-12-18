@@ -25,7 +25,8 @@ users:
       owner: "thedr",
       group: "thedr",
       comment: "Master of the Universe",
-      home: "/home/thedr"
+      home: "/home/thedr",
+      password: 'thedr'
     }
   - {
       name: 'instructor',
