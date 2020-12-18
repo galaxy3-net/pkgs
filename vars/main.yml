@@ -17,6 +17,28 @@ snap_pkgs:
   - { name: terraform }
   - { name: azure-cli, channel: beta, classic: yes }
 
+groups:
+  - {
+      name: "sysadmin",
+      state: present,
+      gid: 1000
+    }
+  - {
+      name: "instructor",
+      state: present,
+      gid: 1002
+    }
+  - {
+      name: "student",
+      state: present,
+      gid: 1004
+    }
+  - {
+      name: "thedr",
+      state: present,
+      gid: 2001
+    }
+
 users:
   - {
       name: 'thedr',
@@ -30,11 +52,32 @@ users:
     }
   - {
       name: 'instructor',
-      uid: 2003,
+      uid: 1002,
+      gid: "instructor",
       shell: "/bin/bash",
       owner: "instructor",
       group: "instructor",
       comment: "Course Instructor",
       home: "/home/instructor",
       password: "instructor"
+    }
+  - {
+      name: 'sysadmin',
+      uid: 1000,
+      shell: "/bin/bash",
+      owner: "sysadmin",
+      group: "sysadmin",
+      comment: "Course sysadmin",
+      home: "/home/sysadmin",
+      password: "cybersecurity"
+    }
+  - {
+      name: 'student',
+      uid: 1003,
+      shell: "/bin/bash",
+      owner: "student",
+      group: "student",
+      comment: "Course student",
+      home: "/home/student",
+      password: "cybersecurity"
     }
