@@ -24,7 +24,7 @@
     update_cache: yes
   loop: "{{ apt_pkgs }}"
   become: yes
-  when: ansible_os_family == 'Debian'
+  when: ansible_os_family == 'Debian' or ansible_os_family == 'Kali GNU/Linux'
 
 - name: Install Snap Based Packages
   become: yes
