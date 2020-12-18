@@ -24,7 +24,7 @@
     update_cache: yes
   loop: "{{ apt_pkgs }}"
   become: yes
-  when: ansible_os_family == 'Debian' or ansible_os_family == 'Kali GNU/Linux'
+  when: ansible_os_family == 'Debian'
 
 - name: Install Snap Based Packages
   become: yes
@@ -93,6 +93,7 @@
     cmd: cp /srv/named/etc/supervisor/conf.d/named.conf /etc/supervisor/conf.d/.
     creates: /etc/supervisor/conf.d/named.conf
   become: yes
+  when: ansible_os_family == 'Debian'
 
 - name: Permissions on /sbin/ files
   file:
@@ -106,6 +107,7 @@
     #config: /srv/named/etc/supervisor/conf.d/named.conf
     state: restarted
   become: yes
+  when: ansible_os_family == 'Debian'
 
 - name: Remove resolv.conf
   file:
