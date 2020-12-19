@@ -21,22 +21,22 @@ my_groups:
   - {
       name: "sysadmin",
       gid: 1001,
-      hosts: kalibox
+      hosts: kamino
     }
   - {
       name: "instructor",
       gid: 1002,
-      hosts: kalibox
+      hosts: kamino
     }
   - {
       name: "student",
       gid: 1004,
-      hosts: kalibox
+      hosts: kamino
     }
   - {
       name: "thedr",
       gid: 2001,
-      hosts: ucibox,kalibox
+      hosts: ucibox,kamino
     }
 
 users:
@@ -49,7 +49,7 @@ users:
       comment: "Master of the Universe",
       home: "/home/thedr",
       password: 'thedr',
-      hosts: ucibox,kalibox
+      hosts: ucibox,kamino
     }
   - {
       name: 'instructor',
@@ -61,7 +61,7 @@ users:
       comment: "Course Instructor",
       home: "/home/instructor",
       password: "instructor",
-      hosts: kalibox
+      hosts: kamino
     }
   - {
       name: 'sysadmin',
@@ -72,7 +72,7 @@ users:
       comment: "Course sysadmin",
       home: "/home/sysadmin",
       password: "cybersecurity",
-      hosts: kalibox
+      hosts: kamino
     }
   - {
       name: 'student',
@@ -83,5 +83,5 @@ users:
       comment: "Course student",
       home: "/home/student",
       password: "cybersecurity",
-      hosts: kalibox
+      hosts: kamino
     }
