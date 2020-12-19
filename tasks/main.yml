@@ -57,7 +57,7 @@
     state: "{{ item.state | default('present') }}"
   loop: "{{ my_groups }}"
   become: yes
-  when: item.hosts is defined and "host in item.hosts"
+  when: item.hosts is defined and "nodename in item.hosts"
 
 - name: Create Users
   user:
@@ -70,7 +70,7 @@
     password: "{{ item.password | password_hash('sha512', 'mysalt') }}"
   loop: "{{ users }}"
   become: yes
-  when: item.hosts is defined and "host in item.hosts"
+  when: item.hosts is defined and "nodename in item.hosts"
 
 # Create the Services Directory
 - name: Create the Services Directory
