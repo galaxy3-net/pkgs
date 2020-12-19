@@ -57,7 +57,7 @@
     state: "{{ item.state | default('present') }}"
   loop: "{{ my_groups }}"
   become: yes
-  when: item.hosts is defined and item.hosts is search(nodename)
+  when: item.hosts is defined and item.hosts.find(nodename) != -1
 
 - name: Create Users
   user:
