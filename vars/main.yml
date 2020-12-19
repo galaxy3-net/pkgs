@@ -20,17 +20,17 @@ snap_pkgs:
 my_groups:
   - {
       name: "sysadmin",
-      gid: 1001
+      gid: 1001,
       hosts: kalibox
     }
   - {
       name: "instructor",
-      gid: 1002
+      gid: 1002,
       hosts: kalibox
     }
   - {
       name: "student",
-      gid: 1004
+      gid: 1004,
       hosts: kalibox
     }
   - {
@@ -60,7 +60,7 @@ users:
       group: "instructor",
       comment: "Course Instructor",
       home: "/home/instructor",
-      password: "instructor"
+      password: "instructor",
       hosts: kalibox
     }
   - {
@@ -71,7 +71,7 @@ users:
       group: "sysadmin",
       comment: "Course sysadmin",
       home: "/home/sysadmin",
-      password: "cybersecurity"
+      password: "cybersecurity",
       hosts: kalibox
     }
   - {
@@ -82,6 +82,6 @@ users:
       group: "student",
       comment: "Course student",
       home: "/home/student",
-      password: "cybersecurity"
+      password: "cybersecurity",
       hosts: kalibox
     }
