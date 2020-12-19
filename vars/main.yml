@@ -21,14 +21,17 @@ my_groups:
   - {
       name: "sysadmin",
       gid: 1001
+      hosts: kalibox
     }
   - {
       name: "instructor",
       gid: 1002
+      hosts: kalibox
     }
   - {
       name: "student",
       gid: 1004
+      hosts: kalibox
     }
   - {
       name: "thedr",
@@ -58,6 +61,7 @@ users:
       comment: "Course Instructor",
       home: "/home/instructor",
       password: "instructor"
+      hosts: kalibox
     }
   - {
       name: 'sysadmin',
@@ -68,6 +72,7 @@ users:
       comment: "Course sysadmin",
       home: "/home/sysadmin",
       password: "cybersecurity"
+      hosts: kalibox
     }
   - {
       name: 'student',
@@ -78,4 +83,5 @@ users:
       comment: "Course student",
       home: "/home/student",
       password: "cybersecurity"
+      hosts: kalibox
     }
