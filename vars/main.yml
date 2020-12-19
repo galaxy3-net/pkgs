@@ -21,24 +21,27 @@ my_groups:
   - {
       name: "sysadmin",
       gid: 1001,
-      hosts: kamino
+      hosts:
+        kamino
     }
   - {
       name: "instructor",
       gid: 1002,
-      hosts: kamino
+      hosts:
+        kamino
     }
   - {
       name: "student",
       gid: 1004,
-      hosts: kamino
+      hosts:
+        kamino
     }
   - {
       name: "thedr",
       gid: 2001,
       hosts:
-        - ucibox
-        - kamino
+        ucibox
+        kamino
     }
 
 users:
@@ -52,8 +55,8 @@ users:
       home: "/home/thedr",
       password: 'thedr',
       hosts:
-        - ucibox
-        - kamino
+        ucibox
+        kamino
     }
   - {
       name: 'instructor',
