@@ -36,7 +36,7 @@ my_groups:
   - {
       name: "thedr",
       gid: 2001,
-      hosts: ucibox,kamino
+      hosts: ucibox, kamino
     }
 
 users:
