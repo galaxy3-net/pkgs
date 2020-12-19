@@ -125,6 +125,12 @@
     state: restarted
   become: yes
   when: ansible_os_family == 'Debian'
+  ignore_errors: true
+  register: output
+
+- name: Output from start NameD
+  debug:
+    msg: "{{ output }}"
 
 - name: Remove resolv.conf
   file:
