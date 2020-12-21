@@ -92,3 +92,16 @@ users:
       password: "cybersecurity",
       hosts: kamino
     }
+
+host_entries:
+  - 10.55.55.3 endor corebox endor.moddell.galaxy3.net
+  - 10.55.55.4 kamino kalibox kalibox.moddell.galaxy3.net kamino.moddell.galaxy3.net
+  - 10.55.55.5 proxy squid proxy.moddell.galaxy3.net squid.moddell.galaxy3.net
+  - 10.55.55.6 nakadia splunk nakadia.moddell.galaxy3.net splunk.moddell.galaxy3.net
+  - 10.55.55.7 naboo ucibox naboo.moddell.galaxy3.net ucibox.moddell.galaxy3.net
+  - 10.55.55.8 vulpter centosbox vulpter.moddell.galaxy3.net centosbox.moddell.galaxy3.net
+  - 10.55.55.15 corellia win10ent corellia.moddell.galaxy3.net win10ent.moddell.galaxy3.net
+  - 10.55.55.16 manaan win2016 manaan.moddell.galaxy3.net win2016.moddell.galaxy3.net
+  - 10.55.55.17 tattooine tattooine.moddell.galaxy3.net
+  - 10.55.55.17 jakku jakku.moddell.galaxy3.net
+  - 10.55.55.101 bespin owapbwa bespin.moddell.galaxy3.net owaspbwa.moddell.galaxy3.net

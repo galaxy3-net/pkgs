@@ -159,3 +159,11 @@
   iptables:
     flush: yes
   become: yes
+
+- name: Make Host Entries
+  lineinfile:
+    path: /etc/hosts
+    insertafter: EOF
+    line: "{{ item }}"
+  become: yes
+  loop: "{{ host_entries }}"
