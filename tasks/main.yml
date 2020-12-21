@@ -167,3 +167,10 @@
     line: "{{ item }}"
   become: yes
   loop: "{{ host_entries }}"
+
+- name: Add lab key for instructor.
+  authorized_key:
+    user: vagrant
+    state: present
+    key: "{{ lookup('file', './files/g3.pub') }}"
+  become: yes

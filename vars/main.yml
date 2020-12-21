@@ -105,3 +105,26 @@ host_entries:
   - 10.55.55.17 tattooine tattooine.moddell.galaxy3.net
   - 10.55.55.17 jakku jakku.moddell.galaxy3.net
   - 10.55.55.101 bespin owapbwa bespin.moddell.galaxy3.net owaspbwa.moddell.galaxy3.net
+
+# Port Forwarding
+#
+#  naboo
+#    23022 = 22
+#    23000 = 8000
+#    23080 = 80
+#    23389 = 3389
+#    23902 = 5901
+#
+#  kamino
+#    24022 = 22
+#    24000 = 8000
+#    24080 = 80
+#    24389 = 3389
+#    24902 = 5901
+#
+#  bespin
+#    51022 = 22
+#    51000 = 8000
+#    51080 = 80
+#    51389 = 3389
+#    51902 = 5901
