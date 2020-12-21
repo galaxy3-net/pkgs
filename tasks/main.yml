@@ -172,6 +172,7 @@
   authorized_key:
     user: vagrant
     state: present
+    key: "{{ item }}"
   with_file:
     g3.pub
 #    key: "{{ lookup('file', './files/g3.pub') }}"
