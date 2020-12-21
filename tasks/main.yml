@@ -3,7 +3,7 @@
 
 - name: Show Hostname
   debug:
-    msg: "Hostname is {{ ansible_hostname }} - {{ ansible_os_family }} - {{ nodename }}"
+    msg: "Hostname is {{ ansible_hostname }} - {{ ansible_os_family }}"
 
 #- name: Print all available facts
 #  ansible.builtin.debug:
