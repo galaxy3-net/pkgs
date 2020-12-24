@@ -104,6 +104,8 @@ host_entries:
   - 10.55.55.16 manaan win2016 manaan.moddell.galaxy3.net win2016.moddell.galaxy3.net
   - 10.55.55.17 tattooine tattooine.moddell.galaxy3.net
   - 10.55.55.17 jakku jakku.moddell.galaxy3.net
+  - 10.55.55.50 tattoine-ubuntu ms3ubuntu tattoine-ubuntu.moddell.galaxy3.net ms3ubuntu.moddell.galaxy3.net
+  - 10.55.55.51 tattoine-win ms3win28k tattoine-win.moddell.galaxy3.net ms3win28k.moddell.galaxy3.net
   - 10.55.55.101 bespin owapbwa bespin.moddell.galaxy3.net owaspbwa.moddell.galaxy3.net
 
 # Port Forwarding
