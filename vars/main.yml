@@ -109,6 +109,12 @@ host_entries:
   - 10.55.56.51 tattoine-win ms3win28k ms3win tattoine-win.moddell.galaxy3.net ms3win28k.moddell.galaxy3.net
   - 10.55.56.101 bespin owaspbwa bespin.moddell.galaxy3.net owaspbwa.moddell.galaxy3.net
 
+remove_host_entries:
+  - 10.55.55.50 tattoine-ubuntu ms3ubuntu tattoine-ubuntu.moddell.galaxy3.net ms3ubuntu.moddell.galaxy3.net
+  - 10.55.55.51 tattoine-win ms3win28k tattoine-win.moddell.galaxy3.net ms3win28k.moddell.galaxy3.net
+  - 10.55.55.101 bespin owapbwa bespin.moddell.galaxy3.net owaspbwa.moddell.galaxy3.net
+
+
 # Port Forwarding
 #
 #  naboo

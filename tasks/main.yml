@@ -168,6 +168,14 @@
   become: yes
   loop: "{{ host_entries }}"
 
+- name: Remove Host Entries
+  lineinfile:
+    path: /etc/hosts
+    line: "{{ item }}"
+    state: absent
+  become: yes
+  loop: "{{ remove_host_entries }}"
+
 - name: Add lab key for instructor.
   authorized_key:
     user: vagrant
