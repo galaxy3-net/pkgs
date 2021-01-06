@@ -14,7 +14,7 @@ apt_pkgs:
   - htop
 
 snap_pkgs:
-  - { name: terraform, channel: beta, classic: yes }
+#  - { name: terraform, channel: beta, classic: yes }
   - { name: azure-cli, channel: beta, classic: yes }
 
 my_groups:
